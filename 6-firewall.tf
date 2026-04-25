@@ -29,3 +29,54 @@ resource "google_compute_firewall" "allow_http" {
     google_compute_network.main
   ]
 }
+
+
+resource "google_compute_firewall" "allow_https" {
+  name    = "allow-https"
+  network = google_compute_network.main.name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["443"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+
+  depends_on = [
+    google_compute_network.main
+  ]
+}
+
+# UDP 500 ESP 
+resource "google_compute_firewall" "allow_esp" {
+  name    = "allow-esp"
+  network = google_compute_network.main.name
+
+  allow {
+    protocol = "udp"
+    ports    = ["500"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+
+  depends_on = [
+    google_compute_network.main
+  ]
+}
+
+# TCP 3389 RDP Because I want to control your BOX!
+resource "google_compute_firewall" "allow_rdp" {
+  name    = "allow-rdp"
+  network = google_compute_network.main.name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["3389"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+
+  depends_on = [
+    google_compute_network.main
+  ]
+}
