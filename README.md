@@ -1,5 +1,6 @@
 Week 5 Homework:
-:dart: Summary: Deployed a VM stack via Terraform, by understanding the process that was applied via
+:dart: Summary
+ Deployed a VM stack via Terraform, by understanding the process that was applied via
 clickOps. You're able to create an infrastructure and code that is reusable and redeployable.
 
 
