@@ -2,7 +2,8 @@
 
 ## :pushpin: Summary
 Deployed a VM stack via Terraform, by understanding the process that was applied via
-clickOps. You're able to create an infrastructure and code that is reusable and redeployable.
+clickOps. You're able to create an infrastructure and code that is reusable and redeployable. Created a
+bucket and backend for terraform state files to be stored. Then made a vpc, subnets, router, nat, and firewall with access on port 80. Added script inside the VM to boot on start up and running gate shell script to show proof of it being accessible.
 
 
 
