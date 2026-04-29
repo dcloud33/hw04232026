@@ -1,4 +1,10 @@
 Week 5 Homework:
+:dart: Summary: Deployed a VM stack via Terraform, by understanding the process that was applied via
+clickOps. You're able to create an infrastructure and code that is reusable and redeployable.
+
+
+
+:computer: Homework
 1. Created split files for:
     authentication
     backend(that was stored in bucket that was created prior)
@@ -13,7 +19,7 @@ Week 5 Homework:
 ```bash
 terraform plan > plan.txt
 ```
-3.Terraform apply proof via screenshots for each terraform file created or edited.
+3. Terraform apply proof via screenshots for each terraform file created or edited.
 
 4. gate_result.json + badge.txt from the gate script
 ```bash
