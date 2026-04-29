@@ -1,12 +1,12 @@
-Week 5 Homework Deliverable
+# Week 5 Homework Deliverable
 
-:pushpin: Summary
+## :pushpin: Summary
 Deployed a VM stack via Terraform, by understanding the process that was applied via
 clickOps. You're able to create an infrastructure and code that is reusable and redeployable.
 
 
 
-:computer: Homework
+## :computer: Homework
 1. Created split files for:
   ```bash
     authentication.tf
