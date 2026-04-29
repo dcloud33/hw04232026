@@ -8,15 +8,16 @@ clickOps. You're able to create an infrastructure and code that is reusable and 
 
 :computer: Homework
 1. Created split files for:
-    authentication
-    backend(that was stored in bucket that was created prior)
-    vpc
-    subnets
-    router
-    nat
-    firewall
-    compute
-
+  ```bash
+    authentication.tf
+    backend.tf(that was stored in bucket that was created prior)
+    vpc.tf
+    subnets.tf
+    router.tf
+    nat.tf
+    firewall.tf
+    compute.tf
+```
 2. Terraform plan output saved as plan txt
 ```bash
 terraform plan > plan.txt
